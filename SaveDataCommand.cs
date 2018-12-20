@@ -42,13 +42,14 @@ namespace ExamplePlugin
                 file.WriteLine("List Of Pluggins:");
                 plugin.pluginManager.Plugins.ForEach(e => { file.WriteLine(e.Details.name); });
                 //Time
-                int totalSeconds = plugin.Server.;
+                int totalSeconds=plugin.Round.Duration;//к сожаление не могу написать код считающий время сервера точно так же как и е его номер
                 int hours = totalSeconds / 3600;
                 int min = totalSeconds / 60;
                 int sec = totalSeconds % 60;
                 string totalTime = hours + ":" + min + ":" + sec;
                 file.WriteLine("Uptime:" + totalTime);
             }
+            
             return new string[] { "Game succesfull saved!"};
         }
     }
