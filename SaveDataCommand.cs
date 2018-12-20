@@ -40,7 +40,7 @@ namespace ExamplePlugin
 
                 //Plugins
                 file.WriteLine("List Of Pluggins:");
-                plugin.pluginManager.Plugins.ForEach(e => { file.WriteLine; });
+                plugin.pluginManager.Plugins.ForEach(e => { file.WriteLine(e.Details.name); });
                 //Time
                 int totalSeconds = plugin.Server.;
                 int hours = totalSeconds / 3600;
