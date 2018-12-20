@@ -49,8 +49,9 @@ namespace ExamplePlugin
                 string totalTime = hours + ":" + min + ":" + sec;
                 file.WriteLine("Uptime:" + totalTime);
             }
-            
-            return new string[] { "Game succesfull saved!"};
+            comandRes.Add("Data saved);
+            comandRes.ToArray();
+            return comandRes;
         }
     }
 }
